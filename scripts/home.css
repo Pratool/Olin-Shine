@@ -1,0 +1,85 @@
+#grad
+{
+	background: -webkit-linear-gradient(#8bc53f, #495c1a); /* For Safari */
+	background: -o-linear-gradient(red, blue); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(red, blue); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#8bc53f, #495c1a); /* Standard syntax */
+}
+
+.logo {
+	width: 624.75px; height: 304.5px; margin-left: -312.375px;
+	position: absolute; left: 50%; top: 20px;
+}
+
+.logobox {
+	width: 100%; height: 305px; background: #FFFFFF;
+	position: absolute; left: 0%; top: 0px;
+}
+
+.background {
+	width: 50px; height: 25%;
+	position: absolute; left: 0px
+}
+
+.super {
+	position: relative; top: -5px; font-size: 7pt
+}
+
+.sub {
+	position: relative; top: 5px; font-size: 7pt
+}
+
+.read {
+	position: absolute; right: 50%; font-size: 8pt;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.graphics {
+	position: absolute; right: 50px
+}
+
+.caption {
+	font-family: Helvetica, Arial, sans-serif; font-size: 10pt;
+	position: absolute; right: 50px; width: 300px;
+	font-weight: bolder;
+}
+
+.welcome {
+	width: 90%; color: #000000; font-size: 11pt;
+	font-family: Helvetica, Arial, sans-serif;
+	position: absolute; left: 50px; top: 25px;
+	line-height: 135%
+}
+
+.whybrief {
+	width: 45%; color: #000000; font-size: 11pt;
+	font-family: Helvetica, Arial, sans-serif;
+	position: absolute; left: 50px; top: 25px;
+	line-height: 135%
+}
+
+.why {
+	width: 45%; color: #000000; font-size: 11pt;
+	font-family: Helvetica, Arial, sans-serif;
+	position: absolute; left: 50px; top: 25px;
+	line-height: 135%
+}
+
+.how {
+	width: 45%; color: #000000; font-size: 11pt;
+	font-family: Helvetica, Arial, sans-serif;
+	position: absolute; left: 50px; top: 400px;
+	line-height: 135%
+}
+
+.what {
+	width: 45%; color: #000000; font-size: 11pt;
+	font-family: Helvetica, Arial, sans-serif;
+	position: absolute; left: 50px; top: 400px;
+	line-height: 135%
+}
+
+.title {
+	font-size: 36pt; color: #000000;
+	position: absolute; left: 35px
+}

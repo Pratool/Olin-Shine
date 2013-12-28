@@ -1,0 +1,86 @@
+
+.background {
+	width: 50px; height: 25%;
+	position: absolute; left: 0px
+}
+
+.super {
+	position: relative; top: -5px; font-size: 7pt
+}
+
+.sub {
+	position: relative; top: 5px; font-size: 7pt
+}
+
+.read {
+	position: absolute; right: 50%
+}
+
+.graphics {
+	margin-left: -350px;
+	position: absolute; left: 50%;
+}
+
+.caption {
+	position: absolute; right: 50px
+}
+
+.intro {
+	width: 90%; color: #000000; font-size: 11pt;
+	font-family: Helvetica, Arial, sans-serif;
+	position: absolute; left: 40px; top: 75px;
+	line-height: 135%
+}
+
+.prosTitle {
+	width: 35%; color: #000000; font-size: 16pt;
+	font-family: Helvetica, Arial, sans-serif;
+	position: absolute; right: 55%; top: 135px;
+	line-height: 135%; font-weight: bolder;
+	text-align: right;
+}
+
+.consTitle {
+	width: 35%; color: #000000; font-size: 16pt;
+	font-family: Helvetica, Arial, sans-serif;
+	position: absolute; left: 55%; top: 135px;
+	line-height: 135%; font-weight: bolder
+}
+
+.pros {
+	width: 35%; color: #000000; font-size: 11pt;
+	font-family: Helvetica, Arial, sans-serif;
+	position: absolute; right: 55%; top: 180px;
+	line-height: 135%; text-align: right
+}
+
+.cons {
+	width: 35%; color: #000000; font-size: 11pt;
+	font-family: Helvetica, Arial, sans-serif;
+	position: absolute; left: 55%; top: 180px;
+	line-height: 135%
+}
+
+.thoughts {
+	width: 70%; color: #000000; font-size: 11pt;
+	font-family: Helvetica, Arial, sans-serif;
+	position: absolute; left: 50px; top: 410px;
+	line-height: 135%
+}
+
+#facebook {
+	position: absolute; left: 10%; top: 900px;
+	width: 80%;
+}
+
+.how {
+	width: 45%; color: #000000; font-size: 11pt;
+	font-family: Helvetica, Arial, sans-serif;
+	position: absolute; left: 50px; top: 400px;
+	line-height: 135%
+}
+
+.title {
+	font-size: 36pt; color: #000000;
+	position: absolute; left: 35px
+}

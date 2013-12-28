@@ -1,1 +1,49 @@
-Hello World! We're on GitHub Pages now!
+<html>
+<head>
+	<title>Solar Energy at Olin!</title>
+	<link rel="stylesheet" type="text/css" href="scripts/general.css">
+	<script type="text/javascript" language="javascript">
+	<!--
+	
+	function changeFrame(name)
+	{
+		document.home.location.href = name + ".html";
+		document.getElementById('home').setAttribute('height',getIFrameHeight(name)+'px');
+	}
+	
+	function getIFrameHeight(name)
+	{
+		var height;
+	
+		switch(name)
+		{
+			case "home":
+				height = 1300;
+				break;
+			case "stats":
+				height = 2000;
+				break;
+			case "discussion":
+				height = 1000;
+				break;
+			default:
+				height = 800;
+				break;
+		}
+		
+		return height;
+	}
+	
+	// -->
+	</script>
+</head>
+<body background="graphics/backgroundOption_1.jpg">
+	<div class="navigation">
+		<span class="home" onclick="changeFrame('home')">Home</span>
+		<span class="stats" onclick="changeFrame('stats')">Stats and Data</span>
+		<span class="discussion" onclick="changeFrame('discussion')">Discussion</span>
+	</div>
+	<img id="image" class="logo" src="graphics/solarOlinLogoSmall.png">
+	<iframe src="home.html" frameborder="0" scrolling="no" id="home" name="home" height="1300px" class="homeframe"></iframe>
+</body>
+</html>

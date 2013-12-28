@@ -1,0 +1,133 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="scripts/home.css">
+	<script language="javascript" type="text/javascript">
+	<!--
+
+	function show(name)
+	{
+		var divs = document.getElementsByTagName("div");
+		var j = 0;
+		var textLength = getTextLength(name);
+		
+		while (divs[j] != document.getElementById(name))
+		{
+			j++;
+		}
+
+		divs[j-1].style.visibility = "hidden";
+		divs[j].style.visibility = "visible";
+		divs[j+1].style.visibility = "visible";
+		divs[j+2].style.visibility = "hidden";
+		
+		var styles;
+		var number, start, end;
+		
+		var i;
+		
+		for (i = j+3; i <= divs.length-1-2; i++)
+		{
+			styles = divs[i].getAttribute("style");
+			// divs[i].setAttribute("style", "position: absolute; top: " + (retrieveHeight(styles)+textLength) + "px");
+			
+			for (k = 0; j <= retrieveHeight(styles); k+=10)
+			{
+			setTimeout(divs[i].setAttribute("style", "position: absolute; top: " + (retrieveHeight(styles)+k) + "px"), 100);
+			}
+			clearTimeout();
+		}
+	}
+
+	function hide(name)
+	{
+		var divs = document.getElementsByTagName("div");
+		var j = 0;
+		var textLength = getTextLength(name);
+		
+		while (divs[j] != document.getElementById(name))
+		{
+			j++;
+		}
+
+		divs[j-1].style.visibility = "visible";
+		divs[j].style.visibility = "hidden";
+		divs[j+1].style.visibility = "hidden";
+		divs[j+2].style.visibility = "visible";
+		
+		var styles = 0;
+		var number;
+		
+		var i;
+		
+		for (i = j+3; i <= divs.length-1-2; i++)
+		{
+			styles = divs[i].getAttribute("style");
+			divs[i].setAttribute("style", "position: absolute; top: " + (retrieveHeight(styles)-textLength) + "px");
+		}
+	}
+	
+	function retrieveHeight(theStyle)
+	{
+		start = eval(theStyle.indexOf("top:")) + 4;
+		end = theStyle.indexOf("px");
+		number = eval( theStyle.substring(start, end) );
+		return number;
+	}
+	
+	function getTextLength(name)
+	{
+		var length;
+	
+		switch(name)
+		{
+			case "why":
+				length = 540;
+				break;
+			case "how":
+				length = 400;
+				break;
+			default:
+				length = 500;
+				break;
+		}
+		
+		return length;
+	}
+	// -->
+	</script>
+	<title>Home</title>
+</head>
+<body  bgcolor="#8bc53f" height="780px">
+	<div class="title" style="position: absolute; top: 25px">Welcome!</div>
+	<div class="welcome" style="position: absolute; top: 75px">
+	This website serves the Olin community surrounding the issue of energy, and poses a possible solution.
+	</div>
+	<span class="title" style="position: absolute; top: 140px; right: 50px; text-align: right">What Olin does</span>
+	<span class="graphics" style="position: absolute; top: 200px"><img src="graphics/trayless.jpg"></span>
+	<div class="caption" style="position: absolute; top: 400px">Olin does not provide trays</div>
+	<span class="graphics" style="position: absolute; top: 475px"><img height="220.75px" width="300px" src="graphics/lowFlowShowerHead.jpg"></span>
+	<div class="caption" style="position: absolute; top: 698px">The showers at Olin use low-flow shower heads</div>
+	<span class="graphics" style="position: absolute; top: 775px"><img width="300px" height="213.125px" src="graphics/wellWater.jpg"></span>
+	<div class="caption" style="position: absolute; top: 990px">Each of these doings help conserve water</div>
+	<div style="position: absolute; top: 105px" class="title">Why solar?</div>
+	<div class="whybrief" id="whybrief" style="position: absolute; top: 165px">Climate change is a serious problem. Flooding, forest fires, and hurricanes are increasing in frequency and magnitude worldwide<span class="super">1</span>, sea levels have risen an average of more than eight inches since 1870<span class="super">2</span>, and global agriculture has already begun to suffer<span class="super">3</span>.</div>
+	<div class="why" id="why" style="position: absolute; top: 165px; visibility: hidden">
+	Climate change is a serious problem. Flooding, forest fires, and hurricanes are increasing in frequency and magnitude worldwide<span class="super">1</span>, sea levels have risen an average of more than eight inches since 1870<span class="super">2</span>, and global agriculture has already begun to suffer<span class="super">3</span>. A recent report released by the IPCC<span class="super">4</span> (Intergovernmental Panel on Climate Change) puts to rest any controversy of the facts regarding human impact on climate change: We are largely responsible. This responsibility has been seen by many as a burden, inspiring denial, uncertainty, and indifference. Yet because we are responsible should be a comfort&#45;it means we, as a species, have the power to make it right. The assumption that one person can&#39;t make a difference impedes progress. In the words of 20th century anthropologist Margaret Mead, &#34;Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it&#39;s the only thing that ever has.&#34; Olin College is one such group of people, seeking to revolutionize engineering education throughout the world. If the purpose of engineering is to better the world, environmental issues should be a priority.
+	Olin prides itself in having an innovative curriculum and in being considerate of societal needs. The college's website states that Olin seeks to "redefine engineering as a profession of innovation encompassing... the consideration of human and societal needs". Additionally, the Honor Code-which every student signs-encourages students to "be receptive to change, supportive of innovation, and willing to take risks for the benefit of the community". Every member of Olin College, student and staff alike, is unified by a desire to support innovation and change, and maintain responsibility for the needs of society. By investing in the future of Olin and the planet, Olin shows respect and responsibility towards future generations and the practice of engineering, a practice that plays a significant role in deciding the outcome of our planets wellbeing.
+	</div>
+	<div style="position: absolute; top: 775px; visibility: hidden" class="read" onclick="hide('why')">read less</div>
+	<div style="position: absolute; top: 230px" class="read" onclick="show('why')">read more</div>
+	<div style="position: absolute; top: 280px" class="title">What are we doing?</div>
+	<div class="what" style="position: absolute; top: 340px">GrOW is proposing a Solar installation over parking lot A. This is similar to a car port installation with solar panels on top.</div>
+	<div style="position: absolute; top: 400px" class="title">How can I help?</div>
+	<div class="how" style="position: absolute; top: 460px">
+		Sign the petition below! We will use the petition to show Olin and the Board of Trustees that the solar initiative has support from students and staff.  Quite frankly, without support from Oliners, it will be difficult to convince the Board that this is a cause worth pursuing. At Olin, we do things together, or not at all.
+		<div style="position: relative; top: 25px">
+		Visit the GrOW facebook page and leave comments, and share the page on your facebook/twitter/tumbler accounts. The more people know about the initiative, the better.
+		</div>
+		<div style="position: relative; top: 50px">Join the debate <a href="discussion.html">here</a>! Discussion and deliberation are key to understanding the needs of the Olin community surrounding the topic of solar energy on campus. We want to hear your ideas, reactions, concerns, and excitement!</div>
+	</div>
+	
+	<span style="position: absolute; right: 50px; bottom: 50px; font-family: Arial, sans-serif; font-size: 10px;"><a href="sources.html">Sources</a></span>
+</body>
+</html>

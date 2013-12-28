@@ -1,0 +1,55 @@
+body {
+	background-size: 100% 857.25px;
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-attachment: fixed;
+}
+
+.logo {
+	width: 624.75px; height: 304.5px; margin-left: -312.375px;
+	position: absolute; left: 50%; top: 5px;
+}
+
+.background {
+	width: 100%; height: 100%;
+	position: absolute; left: 0px; top: 0px
+}
+
+.navbar {
+	width: 500px; height: 25px; margin-left: -250px; z-index: 3;
+	position: absolute; left: 50%; top: 305px;
+	font-size: 16pt; font-family: Helvetica, Arial, Sans-Serif;
+}
+
+.homeframe {
+	width: 62%; z-index: 3;
+	position: absolute; left: 19%; top: 335px;
+}
+
+.navigation {
+	width: 500px; height: 25px; background: #FFFFFF;
+	position: absolute; top: 305px;  margin-left: -250px;
+	z-index: 3; left: 50%; background: linear-gradient(#8bc53f, #495c1a);
+	font-size: 16pt; font-family: Helvetica, Arial, Sans-Serif;
+}
+
+.home {
+	width: 166px; height: 25px;
+	position: relative; left: 10px;
+}
+
+.stats {
+	width: 200px; height: 25px;
+	margin-left: -100px;
+	position: absolute; left: 50%;
+}
+
+.discussion {
+	width: 115px; height: 25px;
+	position: absolute; right: 10px;
+}
+
+.sources {
+	position: absolute; right: 50px; bottom: 50px;
+	font-family: Arial, sans-serif; font-size: 10px;
+}
